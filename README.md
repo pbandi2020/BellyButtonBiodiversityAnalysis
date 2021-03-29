@@ -9,4 +9,4 @@ In this assignment we built a webpage using Javascript and its powerful librarie
 2. Bootstrap for responsive page design
 
 ### Result
-Built a cusotmer friendly interactive dashboard
+Built a customer friendly interactive dashboard
