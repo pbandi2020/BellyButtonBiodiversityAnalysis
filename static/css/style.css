@@ -3,7 +3,7 @@ body {
   background-color: "black";
 }
 .jumbotron {
-  background-image: url("/static/images/bacteria1.jpg");
+  background-image: url("../images/bacteria1.jpg");
   background-size: default;
   text-align: center;
   color: black;
