@@ -1,0 +1,25 @@
+body {
+  color:"white";
+  background-color: "black";
+}
+.jumbotron {
+  background-image: url("/static/images/bacteria1.jpg");
+  background-size: default;
+  text-align: center;
+  color: black;
+  
+}
+.panel-heading{
+    text-align:center;
+    background-color:black;
+    font-display: display4;
+  }
+
+p{
+  font-style:italic;
+  color:black;
+  font-weight:bold;
+  font-size:900;
+  }
+/* {style="font-family: inherit; font-size: 1rem; text-align:center"} */
+  

@@ -7,55 +7,64 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
+      <div class="col-md-12 jumbotron text-center " >
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
-        <!-- <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-          crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="style.css"> -->
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <h5>Test Subject ID No.:</h5>
-          <!-- <select id="selDataset"></select> -->
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-        </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
+      <div class="panel panel-body">
+        <p>Roza wanted to utilize her Belly Button data samples collected frpm volunteers and program a functioning website where users can vizualize the data and looks up their unique data to find the probable match for the bacteria used in the Improbable Beef Burger.<br>
+          <br>
+          The goal of the project was plotting belly button bacteria samples and creating a live dashboard accessed by user input.<br>
+          <br>
+          1. Bar Chart - Creates a horizontal bar chart to with interactive dropdown menu to change the value and select the top 10 OTU individuals found<br>
+          2. Gauge Chart - Shows us the bacteria culture sample <br>
+          3. Bubble Chart - Displays each sample metadata collected
+        </p>
+      </div>
+      <div class="row panel panel-boby">
+        <div class="col-md-2">
+          <div class="well panel panel-info">
+            <h5>Test Subject ID No.:</h5>
+            <!-- <select id="selDataset"></select> -->
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
           </div>
-          <div id="sample-metadata" class="panel-body"></div>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Demographic Info</h3>
+            </div>
+            <div id="sample-metadata" class="panel-body"></div>
+            
+            </div>
+          </div>
+          <div class="col-md-5 panel panel-body">
+            <div id="bar"></div>
+          </div>
+          <div class="col-md-5 panel panel-title">
+           <div id="gauge"></div>
+            <div id="weeklyfrequency-info" style="text-align:center">Guage Value displays the no. of times the Bellybutton been cleaned as per selected ID</div>
+          </div>
         </div>
       </div>
-      <div class="col-md-5">
-        <div id="bar"></div>
-      </div>
-      <div class="col-md-5">
-        <div id="gauge"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
+      
+    <div class="row panel panel-boby">
+      <div class="col-md-11">
         <div id="bubble"></div>
+        <div style="text-align: center;">Display the count of bacteria per sample , the size of the sample depends of the larger value of the sample count</div>
       </div>
     </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <!-- <script src="static/js/plots.js"></script> -->
   <script src="charts.js"></script>
 
 </body>

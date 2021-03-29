@@ -103,7 +103,7 @@ function buildCharts(sample) {
         standoff: 60,
         type: 'category'
       },
-      title:('Top 10 Bacteria Culture Found')
+      title:('<b>Top 10 Bacteria Culture Found</b>')
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot('bar', barData, barLayout);
@@ -134,7 +134,7 @@ function buildCharts(sample) {
      yaxis: {
       title: 'Amount of Bacteria',
      },
-    title: ('Relative Frequency of Bacterial Species'),
+    title: ('<b>Relative Frequency of Bacterial Species</b>'),
     showlegend: false,
     height: 600,
     width: 1200
@@ -152,7 +152,7 @@ function buildCharts(sample) {
      yaxis: {
       title: 'Amount of Bacteria',
      },
-    title: ('Relative Frequency of Bacterial Species'),
+    title: ('<b>Relative Frequency of Bacterial Species<b>'),
     showlegend: false,
     height: 600,
     width: 1200
@@ -175,7 +175,7 @@ function buildCharts(sample) {
           y: [0,1]
         },
         title: {
-          text: "<b>Belly Button Washing Frequency</b> <br> Scrubs per Week",
+          text: "Belly Button Washing Frequency <br> Scrubs per Week",
           font:{
             color: "black"
           }
